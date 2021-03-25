@@ -2,4 +2,3 @@ numpy==1.19.2
 streamlit==0.79.0
 opencv-python==4.5.1.48
 Pillow==8.1.2
-urllib==1.0
