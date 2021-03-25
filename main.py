@@ -6,7 +6,7 @@ from  PIL import Image, ImageEnhance
 Output_image = 500
 
 def main():
-
+    image = Image.open('https://raw.githubusercontent.com/rafaelgrecco/Imagens-datasets/master/ML.jpg')
     st.title('Filter Selector')
     st.sidebar.title('Sidebar')
 
