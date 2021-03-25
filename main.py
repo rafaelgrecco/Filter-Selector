@@ -6,7 +6,17 @@ from  PIL import Image, ImageEnhance
 Output_image = 500
 
 def main():
-    image = Image.open('https://raw.githubusercontent.com/rafaelgrecco/Imagens-datasets/master/ML.jpg')
+    
+    @st.cache
+    def load_image(url):
+        with urllib.request.urlopen(url) as response:
+            image = np.asarray(bytearray(response.read()), dtype="uint8")
+        image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+        image = image[:, :, [2, 1, 0]] # BGR -> RGB
+        return image
+
+    image = load_image('https://raw.githubusercontent.com/rafaelgrecco/Filter-Selector/master/Images/placeholder.jpg')
+    image = Image.fromarray(image)
     st.title('Filter Selector')
     st.sidebar.title('Sidebar')
 
