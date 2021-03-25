@@ -7,7 +7,7 @@ Output_image = 500
 
 def main():
 
-    image = Image.open('/home/rafael/Documentos/Python-Code/Streamlit-Project/Images/placeholder.jpg')
+    image = Image.open('https://github.com/rafaelgrecco/Filter-Selector/blob/master/Images/placeholder.jpg')
     st.title('Filter Selector')
     st.sidebar.title('Sidebar')
 
