@@ -2,6 +2,7 @@ import numpy as np
 import streamlit as st
 import cv2
 from  PIL import Image, ImageEnhance
+from urllib.request import urlopen
 
 Output_image = 500
 
@@ -9,7 +10,7 @@ def main():
     
     @st.cache
     def load_image(url):
-        with urllib.request.urlopen(url) as response:
+        with urlopen(url) as response:
             image = np.asarray(bytearray(response.read()), dtype="uint8")
         image = cv2.imdecode(image, cv2.IMREAD_COLOR)
         image = image[:, :, [2, 1, 0]] # BGR -> RGB
