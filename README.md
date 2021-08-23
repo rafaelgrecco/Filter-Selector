@@ -13,6 +13,7 @@ Electrical Engineering student and technology enthusiast with projects in the fi
 * [LinkedIn](https://www.linkedin.com/in/rafael-grecco-3b11681b4/)
 * [Medium](https://rafaelgrecco.medium.com/)
 
+See the article explaining this application on [Medium](https://medium.com/analytics-vidhya/introduction-to-computer-vision-with-opencv-part-2-2ff85c1abf15)
 
 ## Projetos:
 
